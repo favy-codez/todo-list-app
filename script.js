@@ -8,7 +8,11 @@ const check = "ri-checkbox-circle-fill";
 const unCheck = "ri-add-circle-line";
 const lineThrough = 'line-through';
 
-function addToDo(toDo,id,done){
+function addToDo(toDo,id,done,trash){
+
+    if (trash){
+        return;
+    } 
 
     const Done = done? check : unCheck;
     const Line = done? lineThrough : "";
@@ -29,7 +33,7 @@ addToDo("drink coffe");
 document.addEventListener("keyup", function(event){
     // A keycode is a code that represents a keypress, for enter the keycode =13
     // if the user selects the enter 
-    if (event.keyCode == 13){
+    if (event.key == 13){
        const toDo = input.value; 
        if (toDo) ={
         addToDo(toDo,id,);
@@ -37,6 +41,11 @@ document.addEventListener("keyup", function(event){
        input.value = ""; 
     }
 });
+
+function completeToDo(){
+    element.classList.toggle(check);
+    element.classList.toggle(unCheck);
+}
 
 
 // const addForm = document.querySelector('.add');

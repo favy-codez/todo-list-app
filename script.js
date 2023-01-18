@@ -17,9 +17,15 @@ function addToDo(toDo){
 }
 addToDo("drink coffe");
 
+// A keycode is a code that represents a keypress, for enter the keycode =13
+// whenever the user presses a key
 document.addEventListener("keyup", function(event){
+    // if the user selects the enter 
     if (event.keyCode == 13){
-        
+       const toDo = input.value; 
+       if (toDo) ={
+
+       }
     }
 });
 

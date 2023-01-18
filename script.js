@@ -8,11 +8,15 @@ const check = "ri-checkbox-circle-fill";
 const unCheck = "ri-add-circle-line";
 const lineThrough = 'line-through';
 
-function addToDo(toDo,id){
+function addToDo(toDo,id,done){
+
+    const Done = done? check : unCheck;
+    const Line = done? lineThrough : "";
+
     const text = `
                 <li class="list">
-                    <i class="ri-checkbox-blank-circle-line" job="complete" id ="${id}"></i>
-                    <p class="text">${toDo}</p>
+                    <i class="ri-checkbox-blank-circle-line ${Done}" job="complete" id ="${id}"></i>
+                    <p class="text ${Line}">${toDo}</p>
                     <i class="ri-delete-bin-4-line" job="delete" id ="${id}"></i>
                 </li>
              `

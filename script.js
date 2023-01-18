@@ -17,6 +17,12 @@ function addToDo(toDo){
 }
 addToDo("drink coffe");
 
+document.addEventListener("keyup", function(event){
+    if (event.keyCode == 13){
+        
+    }
+});
+
 
 // const addForm = document.querySelector('.add');
 // const list = document.querySelector('.todos');

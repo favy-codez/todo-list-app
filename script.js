@@ -4,6 +4,9 @@ const dateEl = document.getElementById('date');
 const list = document.getElementById('list');
 const input = document.getElementById('input');
 let LIST = [];
+const check = "ri-checkbox-circle-fill";
+const unCheck = ;
+const lineThrough = 'line-through';
 
 function addToDo(toDo){
     const text = `
@@ -25,7 +28,7 @@ document.addEventListener("keyup", function(event){
     if (event.keyCode == 13){
        const toDo = input.value; 
        if (toDo) ={
-        addToDo();
+        addToDo(toDo,id,);
        }
        input.value = ""; 
     }

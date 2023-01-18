@@ -4,6 +4,12 @@ const dateEl = document.getElementById('date');
 const list = document.getElementById('list');
 const input = document.getElementById('input');
 
+const text = <li class="list">
+                <i class="ri-checkbox-blank-circle-line" job="complete"></i>
+                <p class="text">Drink coffee</p>
+                <i class="ri-delete-bin-4-line" job="delete"></i>
+             </li>
+
 list.insertAdjacentHTML()
 
 // const addForm = document.querySelector('.add');

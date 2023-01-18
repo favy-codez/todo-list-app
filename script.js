@@ -5,15 +5,15 @@ const list = document.getElementById('list');
 const input = document.getElementById('input');
 let LIST = [];
 const check = "ri-checkbox-circle-fill";
-const unCheck = ;
+const unCheck = "ri-add-circle-line";
 const lineThrough = 'line-through';
 
-function addToDo(toDo){
+function addToDo(toDo,id){
     const text = `
                 <li class="list">
-                    <i class="ri-checkbox-blank-circle-line" job="complete"></i>
+                    <i class="ri-checkbox-blank-circle-line" job="complete" id ="${id}"></i>
                     <p class="text">${toDo}</p>
-                    <i class="ri-delete-bin-4-line" job="delete"></i>
+                    <i class="ri-delete-bin-4-line" job="delete" id ="${id}"></i>
                 </li>
              `
     const position = "beforeend";

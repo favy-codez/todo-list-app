@@ -11,6 +11,7 @@ addForm.addEventListener('submit', (e) => {
         addForm.reset();
     }else{
         // alert('Please input task');
+        message.innerHTML = 'Please input task'
     }
 });
 

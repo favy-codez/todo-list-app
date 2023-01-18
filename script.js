@@ -1,5 +1,6 @@
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.todos');
+const message = document.getElementById('warning')
 
 addForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -9,7 +10,7 @@ addForm.addEventListener('submit', (e) => {
         generateTemplate(todo);
         addForm.reset();
     }else{
-        alert('Please input task');
+        // alert('Please input task');
     }
 });
 

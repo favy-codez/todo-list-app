@@ -2,6 +2,9 @@ const clear = document.querySelector('.clear');
 // the query selector selects the first frst classname with .class and in our case we have just one
 const dateEl = document.getElementById('date');
 const list = document.getElementById('list');
+const input = document.getElementById('input');
+
+list.insertAdjacentHTML()
 
 // const addForm = document.querySelector('.add');
 // const list = document.querySelector('.todos');

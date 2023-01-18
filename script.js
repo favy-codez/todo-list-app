@@ -11,6 +11,7 @@ const text = `
                     <i class="ri-delete-bin-4-line" job="delete"></i>
                 </li>
              `
+const position = "beforeend";
 
 list.insertAdjacentHTML()
 

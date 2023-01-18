@@ -4,19 +4,18 @@ const dateEl = document.getElementById('date');
 const list = document.getElementById('list');
 const input = document.getElementById('input');
 
-function addToDo(){
+function addToDo(toDo){
     const text = `
                 <li class="list">
                     <i class="ri-checkbox-blank-circle-line" job="complete"></i>
-                    <p class="text">Drink coffee</p>
+                    <p class="text">${toDo}</p>
                     <i class="ri-delete-bin-4-line" job="delete"></i>
                 </li>
              `
-const position = "beforeend";
-list.insertAdjacentHTML(position, text);
-
+    const position = "beforeend";
+    list.insertAdjacentHTML(position, text);
 }
-
+addToDo("drink coffe");
 
 
 // const addForm = document.querySelector('.add');

@@ -3,6 +3,7 @@ const clear = document.querySelector('.clear');
 const dateEl = document.getElementById('date');
 const list = document.getElementById('list');
 const input = document.getElementById('input');
+let LIST = [];
 
 function addToDo(toDo){
     const text = `
@@ -17,15 +18,16 @@ function addToDo(toDo){
 }
 addToDo("drink coffe");
 
-// A keycode is a code that represents a keypress, for enter the keycode =13
-// whenever the user presses a key
+// whenever the user press a key, it fires up a function
 document.addEventListener("keyup", function(event){
+    // A keycode is a code that represents a keypress, for enter the keycode =13
     // if the user selects the enter 
     if (event.keyCode == 13){
        const toDo = input.value; 
        if (toDo) ={
-
+        addToDo();
        }
+       input.value = ""; 
     }
 });
 

@@ -1,56 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap");
+
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
+  background-color: #a39bd2;
+  min-height: 70vh;
+  padding: 1 rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #494a4b;
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  font-size: 130%;
+}
+
+@media only screen and(min-width : 500px){
+    body{
+        min-height: 100vh;
+    }
 }
 
 .task-form {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .task-form input[type="text"] {
-padding: 10px;
-font-size: 16px;
-border: 1px solid #ccc;
-border-radius: 5px;
-margin-right: 10px;
- }
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
 
 .task-form button {
-padding: 10px 20px;
-font-size: 16px;
-background-color: #4CAF50;
-color: white;
-border: none;
-border-radius: 5px;
-cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .task-form button:hover {
-background-color: #45a049;
+  background-color: #45a049;
 }
 
 .task-item {
-list-style-type: none;
-margin-top: 10px;
+  list-style-type: none;
+  margin-top: 10px;
 }
 
 .task-item span {
-margin-right: 10px;
+  margin-right: 10px;
 }
 
 .task-item button {
-background-color: #f44336;
-color: white;
-border: none;
-cursor: pointer;
-border-radius: 50%;
-margin-left: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 
 .task-item button:hover {
-background-color: #cc0000;
+  background-color: #cc0000;
 }
